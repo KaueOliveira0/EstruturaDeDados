@@ -1,8 +1,8 @@
 package trabalhoed.EstruturaDeDados;
 
 
-public class menu {
-    public static void Menu() {   
+public class menu { // classe menu para exibir as opcoes para o usuario
+    public static void Menu() {   // metodo para exibir as opcoes para o usuario
 
         System.out.println("\n=== Sistema de Spool de Impressao ===");
         System.out.println("1 - Chegada de um pedido de impressao");
