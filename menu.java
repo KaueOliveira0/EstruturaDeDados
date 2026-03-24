@@ -2,7 +2,7 @@ package trabalhoed.EstruturaDeDados;
 
 
 public class menu {
-    public static void exibirMenu() {   
+    public static void Menu() {   
 
         System.out.println("\n=== Sistema de Spool de Impressao ===");
         System.out.println("1 - Chegada de um pedido de impressao");

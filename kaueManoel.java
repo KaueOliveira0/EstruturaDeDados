@@ -1,6 +1,6 @@
 package trabalhoed.EstruturaDeDados;
 
-import java.util.Scanner;
+import  java.util.Scanner;
 
 public class kaueManoel {
     public static void main(String[] args) {
@@ -8,7 +8,7 @@ public class kaueManoel {
         int opcao;
 
         do {
-            menu.exibirMenu();
+            menu.Menu();
             System.out.println("Escolha uma opcao: ");
             opcao = entrada.nextInt();
             entrada.nextLine(); // Quebra de linha
@@ -36,7 +36,7 @@ public class kaueManoel {
                     sistema.mostrarDocumentoAtual();
                     break;
                 case 0:
-                    System.out.println("Saindo");
+                    System.out.println("Fechando o Sistema...");
                     break;
                 default:
                     System.out.println("Opcao Invalida. Tente Novamente.");
