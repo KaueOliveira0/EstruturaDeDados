@@ -12,11 +12,12 @@ public class sistema {
 
     public static void chegadaPedido(Scanner entrada) {
         System.out.print("Digite o nome do documento: ");
-        String documento = entrada.nextLine();
+        String documento;
+        documento = entrada.nextLine();
         filaImpressao.add(documento);
         System.out.println("Documento '" + documento + "' adicionado à fila.");
     }
-
+    
     public static void iniciarImpressao() {
         if (documentoAtual != null) {
             System.out.println("Já existe um documento sendo impresso: " + documentoAtual);

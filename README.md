@@ -1,2 +1,3 @@
-﻿# EstruturaDeDados
-Trabalho N1 de Estrutura de Dados Feito por Kauê e Manoel.
+# Trabalho N1 Estrutura de Dados
+Trabalho de Simulação de Spool de Impressão em Java
+Feito por Kaue e Manoel
