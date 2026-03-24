@@ -4,10 +4,11 @@ import  java.util.Scanner; // import do Scanner para ler o que o usuario digitar
 
 public class kaueManoel { // classe principal do programa
     public static void main(String[] args) { // main do programa, onde o programa inicia a execucao
-        Scanner entrada = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in); // cria um objeto Scanner para ler o que o usuario digitar
         int opcao; // variavel para a opcao escolhida pelo usuario
 
-        do {
+        do { // loop para exibir o menu e ler a opcao escolhida pelo usuario, o loop ira continua executando enquanto a opcao escolhida não for 0
+
             menu.Menu(); // chama o metodo Menu da classe menu para exibir as opcoes para o usuario
             System.out.println("Escolha uma opcao: "); // pede para o usuario escolher uma opcao
             opcao = entrada.nextInt(); // le a opcao escolhida pelo usuario
@@ -41,6 +42,6 @@ public class kaueManoel { // classe principal do programa
                 default:
                     System.out.println("Opcao Invalida. Tente Novamente."); // mensagem de erro para opcao invalida escolhida pelo usuario
             }
-        } while (opcao != 0); // o loop continua executando enquanto a opcao escolhida pelo usuario for diferente de 0
+        } while (opcao != 0); // o loop continua sendo executando enquanto a opcao escolhida pelo usuario não for 0
     }
 }
