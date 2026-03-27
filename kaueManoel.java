@@ -8,7 +8,6 @@ public class kaueManoel { // classe principal do programa
         int opcao; // variavel para a opcao escolhida pelo usuario
 
         do { // loop para exibir o menu e ler a opcao escolhida pelo usuario, o loop ira continua executando enquanto a opcao escolhida não for 0
-
             menu.Menu(); // chama o metodo Menu da classe menu para exibir as opcoes para o usuario
             System.out.println("Escolha uma opcao: "); // pede para o usuario escolher uma opcao
             opcao = entrada.nextInt(); // le a opcao escolhida pelo usuario
@@ -43,9 +42,5 @@ public class kaueManoel { // classe principal do programa
                     System.out.println("Opcao Invalida. Tente Novamente."); // mensagem de erro para opcao invalida escolhida pelo usuario
             }
         } while (opcao != 0); // o loop continua sendo executando enquanto a opcao escolhida pelo usuario não for 0
-    }
-        public static void limparTela() {
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
     }
 }

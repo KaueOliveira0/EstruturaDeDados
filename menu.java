@@ -13,8 +13,4 @@ public class menu { // classe menu para exibir as opcoes para o usuario
         System.out.println("7 - Mostrar documento atual sendo impresso");
         System.out.println("0 - Sair do sistema");
     }
-    public static void limparTela() {
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
-    }
 }
