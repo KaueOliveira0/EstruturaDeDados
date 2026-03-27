@@ -3,7 +3,6 @@ package trabalhoed.EstruturaDeDados;
 
 public class menu { // classe menu para exibir as opcoes para o usuario
     public static void Menu() {   // metodo para exibir as opcoes para o usuario
-
         System.out.println("\n=== Sistema de Spool de Impressao ===");
         System.out.println("1 - Chegada de um pedido de impressao");
         System.out.println("2 - Iniciar uma impressao");
@@ -13,5 +12,9 @@ public class menu { // classe menu para exibir as opcoes para o usuario
         System.out.println("6 - Cancelar proximo pedido");
         System.out.println("7 - Mostrar documento atual sendo impresso");
         System.out.println("0 - Sair do sistema");
+    }
+    public static void limparTela() {
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
     }
 }

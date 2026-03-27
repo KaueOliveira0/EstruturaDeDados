@@ -44,4 +44,8 @@ public class kaueManoel { // classe principal do programa
             }
         } while (opcao != 0); // o loop continua sendo executando enquanto a opcao escolhida pelo usuario não for 0
     }
+        public static void limparTela() {
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+    }
 }
