@@ -12,7 +12,7 @@ public class sistema { // classe sistema para gerenciar a fila de impressao e as
 
 
     public static void chegadaPedido(Scanner entrada) { // metodo para adicionar um documento a fila de impressao
-        limparTela();
+        limparTela(); // Limpa a tela
         System.out.print("Digite o nome do documento: ");
         String documento; // variavel para armazenar o nome do documento que o usuario deseja imprimir
         documento = entrada.nextLine(); // le o nome do documento que o usuario deseja imprimir e armazena na variavel documento
@@ -21,7 +21,7 @@ public class sistema { // classe sistema para gerenciar a fila de impressao e as
     }
     
     public static void iniciarImpressao() { // metodo para iniciar a impressao do documento atual
-        limparTela();
+        limparTela(); // Limpa a tela
         if (documentoAtual != null) // verifica se ja existe um documento sendo impresso no momento
         {
             System.out.println("Já existe um documento sendo impresso: " + documentoAtual);
@@ -35,7 +35,7 @@ public class sistema { // classe sistema para gerenciar a fila de impressao e as
     }
 
     public static void finalizarImpressao() { // metodo para finalizar a impressao do documento atual
-            limparTela();
+            limparTela(); // Limpa a tela
         if (documentoAtual == null) // verifica se existe um documento sendo impresso no momento
         {
             System.out.println("Nenhum documento está sendo impresso no momento.");
@@ -47,7 +47,7 @@ public class sistema { // classe sistema para gerenciar a fila de impressao e as
     }
 
     public static void mostrarFila() { // metodo para exibir os documentos que estao na fila de impressao
-            limparTela();
+            limparTela(); // Limpa a tela
         if (filaImpressao.isEmpty()) // verifica se a fila de impressao esta vazia
         {
             System.out.println("A fila de impressão está vazia.");
@@ -63,13 +63,13 @@ public class sistema { // classe sistema para gerenciar a fila de impressao e as
     }
 
     public static void mostrarTotalizador() { // metodo para exibir o total de documentos que foram impressos
-        limparTela();
+        limparTela(); // Limpa a tela
         System.out.println("Total de documentos impressos: " + totalImpressos);
     }
 
 
     public static void cancelarProximo() { // metodo para cancelar o proximo documento que sera impresso, removendo o proximo documento da fila de impressao
-        limparTela();
+        limparTela(); // Limpa a tela
         if (filaImpressao.isEmpty()) // verifica se a fila de impressao esta vazia
         {
             System.out.println("A fila de impressão está vazia.");
@@ -80,7 +80,7 @@ public class sistema { // classe sistema para gerenciar a fila de impressao e as
     }
 
     public static void mostrarDocumentoAtual() { // metodo para exibir o documento que esta sendo impresso no momento
-        limparTela();
+        limparTela(); // Limpa a tela
         if (documentoAtual == null) // verifica se existe um documento sendo impresso no momento
         {
             System.out.println("Nenhum documento está sendo impresso no momento.");
@@ -88,8 +88,8 @@ public class sistema { // classe sistema para gerenciar a fila de impressao e as
             System.out.println("Documento sendo impresso: " + documentoAtual);
         }
     }
-        public static void limparTela() {
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
+        public static void limparTela() { // metodo para limpar a tela
+        System.out.print("\033[H\033[2J"); // sequencia de caracteres para limpar a tela no terminal
+        System.out.flush(); // limpa o buffer de saida
     }
 }
